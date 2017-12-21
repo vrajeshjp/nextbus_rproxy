@@ -18,7 +18,7 @@ IV.  Hacks
         2. sudo docker run -d -p 80:80 vrajeshjp/nextbus-reverseproxy
 
   2. Use the IP of instance/machine in browser to test if application in reachable. 
-  3. To rest various commands, execute the Tests.sh file. This inturn is executing a client side python script to test the appliaction for various test cases.
+  3. To test various commands, execute the Tests.sh file. This inturn is executing a client side python script to test the appliaction for various test cases.
 	
 ====================================================
             II. Assumptions
@@ -53,6 +53,6 @@ IV.  Hacks
 ====================================================
                IV. Hacks
 ====================================================
-  1. The application requires the instance/docker IP over whicht the application is running. In an production environment this can be configured using some deployment/configuration tool like Jenkins/Ansible. However to ensure this application runs on any machine for testing purposes, the IP of application is set to 0.0.0.0.
+  1. The application requires the instance/docker IP over which the application is running. In a production environment this can be configured using some deployment/configuration tool like Jenkins/Ansible. However to ensure this application runs on any machine for testing purposes, the IP initialization in application is set to 0.0.0.0
   
-  2. In order to use a central database, I created a mongodb container and tried to link all the application containers to the common mongodb data base. However, the connection between the two required troubleshooting. So for proof of concept, I have used a public mongodb db.
+  2. In order to use a central database, I created a mongodb container and tried to link all the application containers to the common mongodb data base. However, the connection between the two required troubleshooting. So for proof of concept, I have used a public mongodb db instance.
