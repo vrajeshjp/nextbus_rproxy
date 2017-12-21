@@ -13,7 +13,7 @@ commands = [ 'command=agencyList',
 ]
 
 for c in commands:
-    url = 'http://54.208.29.7'
+    url = 'http://54.208.29.7'    #Change this IP to HOST IP running the container
     url = url + '?'+ c
     print url
     req = urllib2.Request(url)
